@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Calidad de Servicio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4285f4;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .options {
+            display: flex;
+            align-items: center;
+        }
+        .options label {
+            margin-right: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4285f4;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">&larr;</a>
+
+    <div class="container">
+        <h1>Encuesta de Calidad de Servicio</h1>
+        <form action="procesar_encuesta.php" method="post">
+            <div class="question">
+                <label for="pregunta1">1. ¿Cómo calificaría la amabilidad del personal?</label>
+                <div class="options">
+                    <input type="radio" id="excelente1" name="pregunta1" value="excelente">
+                    <label for="excelente1">Excelente</label>
+                    <input type="radio" id="bueno1" name="pregunta1" value="bueno">
+                    <label for="bueno1">Bueno</label>
+                    <input type="radio" id="regular1" name="pregunta1" value="regular">
+                    <label for="regular1">Regular</label>
+                    <input type="radio" id="malo1" name="pregunta1" value="malo">
+                    <label for="malo1">Malo</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="pregunta2">2. ¿Qué opinión tiene sobre la rapidez del servicio?</label>
+                <div class="options">
+                    <input type="radio" id="excelente2" name="pregunta2" value="excelente">
+                    <label for="excelente2">Excelente</label>
+                    <input type="radio" id="bueno2" name="pregunta2" value="bueno">
+                    <label for="bueno2">Bueno</label>
+                    <input type="radio" id="regular2" name="pregunta2" value="regular">
+                    <label for="regular2">Regular</label>
+                    <input type="radio" id="malo2" name="pregunta2" value="malo">
+                    <label for="malo2">Malo</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="pregunta3">3. ¿Está satisfecho con la calidad de los productos/servicios?</label>
+                <div class="options">
+                    <input type="radio" id="excelente3" name="pregunta3" value="excelente">
+                    <label for="excelente3">Excelente</label>
+                    <input type="radio" id="bueno3" name="pregunta3" value="bueno">
+                    <label for="bueno3">Bueno</label>
+                    <input type="radio" id="regular3" name="pregunta3" value="regular">
+                    <label for="regular3">Regular</label>
+                    <input type="radio" id="malo3" name="pregunta3" value="malo">
+                    <label for="malo3">Malo</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="pregunta4">4. ¿Cómo considera la limpieza del lugar?</label>
+                <div class="options">
+                    <input type="radio" id="excelente4" name="pregunta4" value="excelente">
+                    <label for="excelente4">Excelente</label>
+                    <input type="radio" id="bueno4" name="pregunta4" value="bueno">
+                    <label for="bueno4">Bueno</label>
+                    <input type="radio" id="regular4" name="pregunta4" value="regular">
+                    <label for="regular4">Regular</label>
+                    <input type="radio" id="malo4" name="pregunta4" value="malo">
+                    <label for="malo4">Malo</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="pregunta5">5. ¿Recomendaría nuestro servicio a otras personas?</label>
+                <div class="options">
+                    <input type="radio" id="si5" name="pregunta5" value="si">
+                    <label for="si5">Sí</label>
+                    <input type="radio" id="no5" name="pregunta5" value="no">
+                    <label for="no5">No</label>
+                </div>
+            </div>
+            <input type="submit" value="Enviar Respuestas">
+        </form>
+    </div>
+</body>
+</html>

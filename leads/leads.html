@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar ahora gratis</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        p.privacy {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">&larr;</a>
+
+    <div class="container">
+        <h1>Descargar ahora gratis</h1>
+        <form action="procesar.php" method="post">
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido *</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="empresa">Nombre empresa</label>
+            <input type="text" id="empresa" name="empresa">
+            <label for="sitio">Sitio web</label>
+            <input type="text" id="sitio" name="sitio">
+            <label for="personas">¿Cuántas personas trabajan?</label>
+            <select id="personas" name="personas">
+                <option value="1-10">1 a 10</option>
+                <option value="11-25" selected>11 a 25</option>
+                <option value="26-50">26 a 50</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <div class="container">
+                <h1>Descargar ahora gratis</h1>
+                <form action="procesar.php" method="post">
+                <input type="checkbox" id="blog" name="blog" value="si">
+                <label for="blog">Subscribirse a la pagina</label>
+                <button type="submit">Descargar</button>
+                </form>
+                <p class="privacy">Tu privacidad es importante para nosotros. Utilizamos la información que proporcionas para ponerte en contacto con contenido, productos y servicios relevantes para ti. Puedes darte de baja en cualquier momento. Consulta nuestra <a href="politicadeprivacidad.html">Política de Privacidad</a> para más detalles.</p>
+            </div>
+    </div>
+</body>
+</html>

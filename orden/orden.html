@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Producto y Envío</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-button">&larr;</a>
+
+    <div class="container">
+        <h1>Registro de Producto y Envío</h1>
+        <form action="procesar.php" method="post">
+            <h2>MI INFORMACIÓN</h2>
+            <label for="email">Correo electrónico*</label>
+            <input type="text" id="email" name="email" required>
+            <h2>DIRECCIÓN DE ENVÍO</h2>
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido*</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="empresa">C/O Empresa</label>
+            <input type="text" id="empresa" name="empresa">
+            <label for="direccion1">Calle*</label>
+            <input type="text" id="direccion1" name="direccion1" required>
+            <label for="direccion2">Numero de domicilio</label>
+            <input type="text" id="direccion2" name="direccion2">
+            <label for="codigo">Código postal/Colonia*</label>
+            <input type="text" id="codigo" name="codigo" required>
+            <button type="submit">Realizar pedido</button>
+        </form>
+    </div>
+</body>
+</html>
